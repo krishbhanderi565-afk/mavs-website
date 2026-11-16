@@ -220,10 +220,10 @@ export const Downloads: React.FC = () => {
                 </a>
               </li>
               <li>
-                Set the Tag version to: <code className="bg-gray-100 px-1.5 py-0.5 rounded font-mono font-bold">v1.0.0</code>
+                Set the Tag version to: <code className="bg-gray-100 px-1.5 py-0.5 rounded font-mono font-bold">{WINDOWS_RELEASE_CONFIG.version}</code>
               </li>
               <li>
-                Set the Release Title to: <code className="bg-gray-100 px-1.5 py-0.5 rounded font-mono font-bold">MAVS v1.0.0 — Initial Windows Release</code>
+                Set the Release Title to: <code className="bg-gray-100 px-1.5 py-0.5 rounded font-mono font-bold">MAVS {WINDOWS_RELEASE_CONFIG.version} — High-Performance Speech Synthesis &amp; Updated UI</code>
               </li>
               <li>
                 Drag &amp; drop your installer file into the binary asset box:

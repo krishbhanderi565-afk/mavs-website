@@ -193,7 +193,7 @@ export const HowMavsWorks: React.FC<HowMavsWorksProps> = ({ onOpenLightbox }) =>
                 )}
               </div>
               <p className="text-[11px] text-[#806C80] text-center mt-2 italic">
-                📸 Actual MAVS desktop workspace capture v1.0.0
+                📸 Actual MAVS desktop workspace capture
               </p>
             </div>
           </div>

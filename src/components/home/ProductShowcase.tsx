@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CheckCircle2, Volume2, Download, Layers, ShieldCheck } from 'lucide-react';
+import { WINDOWS_CURRENT_RELEASE } from '../../data/releases';
 
 export const ProductShowcase: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'generation' | 'installed'>('generation');
@@ -84,7 +85,7 @@ export const ProductShowcase: React.FC = () => {
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
                   <CheckCircle2 className="w-3 h-3" />
-                  Verified Build v1.0.0
+                  Verified Build {WINDOWS_CURRENT_RELEASE.version}
                 </span>
               </div>
             </div>
