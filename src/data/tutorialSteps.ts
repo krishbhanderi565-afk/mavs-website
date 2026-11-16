@@ -118,7 +118,7 @@ export const TUTORIAL_STEPS: TutorialStep[] = [
     keyAction: 'Paste or write script into the central text canvas.',
     uiElements: ['Textarea Prompt Canvas', 'Live Character Counter (0 / 100,000)', 'Clear Text Action'],
     screenshot: '/assets/verified_generation_screenshot.png',
-    alt: 'MAVS text canvas showing entered Marathi script with live character count',
+    alt: 'MAVS text canvas showing entered Gujarati script with live character count',
     caption: 'Central prompt canvas accepting up to 100,000 characters in native Indian scripts.',
     captureStatus: 'live_capture',
     category: 'studio'

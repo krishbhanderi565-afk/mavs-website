@@ -145,7 +145,7 @@ export const ExploreHero: React.FC = () => {
                   }
                   alt={
                     activeView === 'generation'
-                      ? 'Actual MAVS application running speech generation in Marathi with waveform audio player'
+                      ? 'Actual MAVS application running speech generation in Gujarati with Satvik voice and floral motif UI'
                       : 'Actual MAVS desktop workspace overview running natively on Windows'
                   }
                   className="w-full h-auto object-contain max-h-[600px] select-none"
