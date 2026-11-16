@@ -43,6 +43,8 @@ export function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
+            <Route path="/expore" element={<Explore />} />
+            <Route path="/explore-mavs" element={<Explore />} />
             <Route path="/about" element={<About />} />
             <Route path="/features" element={<Features />} />
             <Route path="/script-enhancer" element={<ScriptEnhancer />} />
