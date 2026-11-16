@@ -38,9 +38,9 @@ export const EXPECTED_INSTALLER_URL = 'https://github.com/krishbhanderi565-afk/m
  * 2) C:\Users\Jayesh Bhanderi\Desktop\mithi-voice-studio\release\MAVS-Setup-x64.exe
  * Both files are 100% identical.
  * 
- * Set IS_GITHUB_RELEASE_PUBLISHED = true once you publish the release on GitHub.
+ * GitHub release v1.0.0 published and verified.
  */
-const IS_GITHUB_RELEASE_PUBLISHED = false;
+const IS_GITHUB_RELEASE_PUBLISHED = true;
 
 export const WINDOWS_RELEASE_CONFIG: WindowsReleaseConfig = {
   platform: 'Windows',
@@ -59,7 +59,7 @@ export const WINDOWS_RELEASE_CONFIG: WindowsReleaseConfig = {
   fileSize: '497.5 MB',
   fileSizeFormatted: '497.5 MB',
   sha256: 'EC18773872F13EA0EB484CD942503D89B6BAC7108777FF5FAE59F7CA98C62710',
-  releaseDate: 'November 2026',
+  releaseDate: 'November 16, 2026',
   targetOs: 'Windows 10 and Windows 11',
   modelFirstLaunchNote: 'The application may download its required model files during the first launch. Generation performance depends on your system.',
   minSpecs: {
