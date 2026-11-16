@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cream: #FAEEDE;
+    --plum: #2C1030;
+    --pink: #EC5478;
+    --orange: #FF9B36;
+    --muted-plum: #806C80;
+    --light-pink: #F9DDE2;
+  }
+
+  body {
+    background-color: #FAEEDE;
+    color: #2C1030;
+    font-family: 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom styles and background ornaments */
+.mithi-bg-pattern {
+  background-image: radial-gradient(rgba(236, 84, 120, 0.07) 1px, transparent 1px),
+                    radial-gradient(rgba(255, 155, 54, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.hero-banner-bg {
+  background-color: #FAEEDE;
+  background-image: linear-gradient(to bottom, rgba(250, 238, 222, 0.92), rgba(250, 238, 222, 0.98)), url('/assets/mithi-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-banner-bg {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(249, 221, 226, 0.45));
+}
+
+/* Indic Font Classes */
+.font-indic-gujarati { font-family: 'Noto Sans Gujarati', 'DM Sans', sans-serif; }
+.font-indic-bengali { font-family: 'Noto Sans Bengali', 'DM Sans', sans-serif; }
+.font-indic-telugu { font-family: 'Noto Sans Telugu', 'DM Sans', sans-serif; }
+.font-indic-kannada { font-family: 'Noto Sans Kannada', 'DM Sans', sans-serif; }
+.font-indic-devanagari { font-family: 'Noto Sans Devanagari', 'DM Sans', sans-serif; }
+.font-indic-malayalam { font-family: 'Noto Sans Malayalam', 'DM Sans', sans-serif; }
+.font-indic-odia { font-family: 'Noto Sans Oriya', 'DM Sans', sans-serif; }
+.font-indic-punjabi { font-family: 'Noto Sans Gurmukhi', 'DM Sans', sans-serif; }
+.font-indic-tamil { font-family: 'Noto Sans Tamil', 'DM Sans', sans-serif; }
+
+/* Continuous infinite marquees */
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-1 {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(2px, -10px); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(-2px, -8px); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(3px, -11px); }
+}
+
+@keyframes float-4 {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(-3px, -7px); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes cursor-blink {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-cursor {
+  animation: cursor-blink 0.9s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-float-1 {
+  animation: float-1 6.2s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-2 7.4s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-3 5.8s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: float-4 8.1s ease-in-out infinite;
+}
+
+.animate-float-1:hover,
+.animate-float-2:hover,
+.animate-float-3:hover,
+.animate-float-4:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 35s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 35s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-1,
+  .animate-float-2,
+  .animate-float-3,
+  .animate-float-4,
+  .animate-marquee-left,
+  .animate-marquee-right,
+  .animate-cursor {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAEEDE;
+}
+::-webkit-scrollbar-thumb {
+  background: #806C80;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C1030;
+}

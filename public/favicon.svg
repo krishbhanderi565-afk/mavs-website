@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="mavsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C1030"/>
+      <stop offset="100%" stop-color="#4A1848"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9B36"/>
+      <stop offset="100%" stop-color="#EC5478"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#mavsGrad)"/>
+  <!-- Subtle floral sunburst corner accents -->
+  <circle cx="15" cy="15" r="8" fill="#EC5478" opacity="0.3"/>
+  <circle cx="85" cy="85" r="8" fill="#FF9B36" opacity="0.3"/>
+  <text x="50" y="62" font-family="'DM Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="34" letter-spacing="-1" text-anchor="middle" fill="#FAEEDE">
+    M<tspan fill="#FF9B36">A</tspan><tspan fill="#EC5478">V</tspan>S
+  </text>
+  <circle cx="50" cy="74" r="3" fill="#EC5478"/>
+</svg>
